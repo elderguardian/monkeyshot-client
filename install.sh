@@ -1,5 +1,5 @@
-mkdir /opt/Kagerou
-mv src/* /opt/Kagerou
+mkdir ~/.Kagerou
+mv src/* ~/.Kagerou
 rmdir src/
 
 mv files/kagerou-client ~/.local/bin/

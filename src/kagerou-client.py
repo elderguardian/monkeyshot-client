@@ -13,7 +13,7 @@ class MyApp(Adw.Application):
 
     def on_activate(self, app):
         builder = Gtk.Builder()
-        builder.add_from_file("/opt/Kagerou/assets/kagerou client.ui")
+        builder.add_from_file("~/.Kagerou/assets/kagerou client.ui")
 
         button = builder.get_object("sectionButton")
         button.connect("clicked", self.sectionButtonClicked)
@@ -26,11 +26,11 @@ class MyApp(Adw.Application):
         self.win.present()
 
     def sectionButtonClicked(self, button):
-        p = Popen('/opt/Kagerou/assets/section.sh', shell=True)
+        p = Popen('~/.Kagerou/assets/section.sh', shell=True)
         sys.exit()
 
     def fullscreenButtonClicked(self, button):
-        p = Popen('/opt/Kagerou/assets/fullscreen.sh', shell=True)
+        p = Popen('~/.Kagerou/assets/fullscreen.sh', shell=True)
         sys.exit()
 
 app = MyApp(application_id="")
