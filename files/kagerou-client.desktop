@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Kagerou
+Exec=python3 /opt/Kagerou/kagerou-client.py
+Comment=Kagerou Launcher
+Terminal=false
+Icon=/opt/Kagerou/icon.jpg
+Type=Application
