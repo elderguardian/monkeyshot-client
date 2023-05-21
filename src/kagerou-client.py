@@ -13,7 +13,7 @@ class MyApp(Adw.Application):
 
     def on_activate(self, app):
         builder = Gtk.Builder()
-        builder.add_from_file("~/.Kagerou/assets/kagerou client.ui")
+        builder.add_from_file("~/.Kagerou/assets/kagerou-client.ui")
 
         button = builder.get_object("sectionButton")
         button.connect("clicked", self.sectionButtonClicked)
