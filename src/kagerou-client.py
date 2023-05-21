@@ -1,5 +1,6 @@
 import sys
 import gi
+import os
 from subprocess import Popen
 
 gi.require_version('Gtk', '4.0')
@@ -10,10 +11,11 @@ class MyApp(Adw.Application):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.connect('activate', self.on_activate)
+        self.workingDir = "/home/" + os.getlogin() + "/.Kagerou"
 
     def on_activate(self, app):
         builder = Gtk.Builder()
-        builder.add_from_file("~/.Kagerou/assets/kagerou-client.ui")
+        builder.add_from_file(self.workingDir + "/assets/kagerou-client.ui")
 
         button = builder.get_object("sectionButton")
         button.connect("clicked", self.sectionButtonClicked)
@@ -26,11 +28,11 @@ class MyApp(Adw.Application):
         self.win.present()
 
     def sectionButtonClicked(self, button):
-        p = Popen('~/.Kagerou/assets/section.sh', shell=True)
+        p = Popen(self.workingDir + '/assets/section.sh', shell=True)
         sys.exit()
 
     def fullscreenButtonClicked(self, button):
-        p = Popen('~/.Kagerou/assets/fullscreen.sh', shell=True)
+        p = Popen(self.workingDir + '/assets/fullscreen.sh', shell=True)
         sys.exit()
 
 app = MyApp(application_id="")
