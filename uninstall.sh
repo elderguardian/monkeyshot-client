@@ -1,3 +1,3 @@
-rm -rf ~/.Kagerou
-rm ~/.local/bin/kagerou-client
-rm ~/.local/share/applications/kagerou-client.desktop
+rm -rf ~/.Monkeyshot
+rm ~/.local/bin/monkeyshot-client
+rm ~/.local/share/applications/monkeyshot-client.desktop

@@ -1,5 +1,5 @@
-# kagerou-client
-This is a client for the [kagerou](https://github.com/elderguardian/kagerou) server. It was written with 0 knowledge about python, shell or the gtk.
+# monkeyshot-client
+This is a client for the [monkeyshot](https://github.com/elderguardian/monkeyshot) server. It was written with 0 knowledge about python, shell or the gtk.
 
 ## Preview
 <img src="./preview/menu.png" alt="Image of the menu" width="45%">

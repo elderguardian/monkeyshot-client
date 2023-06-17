@@ -1,5 +1,5 @@
 #!/bin/bash
-source ~/.Kagerou/config.sh
+source ~/.Monkeyshot/config.sh
 
 URL=$(curl \
   -F "token=${UPLOAD_SECRET}" \

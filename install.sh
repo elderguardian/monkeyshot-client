@@ -1,9 +1,9 @@
-mkdir ~/.Kagerou
-mv src/* ~/.Kagerou
+mkdir ~/.Monkeyshot
+mv src/* ~/.Monkeyshot
 rmdir src/
 
-mv files/kagerou-client ~/.local/bin/
-chmod +x ~/.local/bin/kagerou-client
-mv files/kagerou-client.desktop ~/.local/share/applications/
-mv files/kagerou-client.png ~/.local/share/icons/hicolor/512x512/apps/
+mv files/monkeyshot-client ~/.local/bin/
+chmod +x ~/.local/bin/monkeyshot-client
+mv files/monkeyshot-client.desktop ~/.local/share/applications/
+mv files/monkeyshot-client.png ~/.local/share/icons/hicolor/512x512/apps/
 rmdir files/
