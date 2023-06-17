@@ -11,11 +11,11 @@ class MyApp(Adw.Application):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.connect('activate', self.on_activate)
-        self.workingDir = "/home/" + os.getlogin() + "/.Kagerou"
+        self.workingDir = "/home/" + os.getlogin() + "/.Monkeyshot"
 
     def on_activate(self, app):
         builder = Gtk.Builder()
-        builder.add_from_file(self.workingDir + "/assets/kagerou-client.ui")
+        builder.add_from_file(self.workingDir + "/assets/monkeyshot-client.ui")
 
         button = builder.get_object("sectionButton")
         button.connect("clicked", self.sectionButtonClicked)
